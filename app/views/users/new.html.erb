@@ -1,4 +1,8 @@
-<form action="users/create" method="POST">
+
+
+<!------------------------  with HTML  ------------------------>
+
+<!-- <form action="users/create" method="POST">
 	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 Username:<br>
   <input type="text" name="username">
@@ -10,4 +14,27 @@ Username:<br>
   <input type="text" name="bio">
    <br> <br>
   <input type="submit" value="Envoyer le formulaire">
-</form>
+</form> --> 
+
+
+<!------------------------with form_tag------------------------>
+
+<%= form_tag url_for(action: 'create'), method: "post" do %>
+
+      <%= label_tag 'Username' %><br />
+      <%= text_field_tag 'username' %>
+      <br /> <br />
+
+      <%= label_tag 'Email' %><br />
+      <%= email_field_tag 'email'%>
+      <br /> <br />
+
+      <%= label_tag 'Bio' %><br />
+      <%= text_area_tag 'bio' %>
+      <br /> <br />
+
+      <%= submit_tag "Create Post" %>
+
+    <% end %>
+
+
