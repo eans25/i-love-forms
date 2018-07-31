@@ -2,31 +2,41 @@
 
 <!------------------------  with HTML  ------------------------>
 
-<form action="users/create" method="POST">
-	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<form class="form-horizontal" action="users/create" method="POST">
+	
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+
 
 
 <div class="form-group">
-    <label for="formGroupExampleInput">Pseudo</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="enter username" name="username">
+    <label class="control-label col-sm-2" for="username">Entrez votre pseudo:</label>
+    <div class="col-sm-10">
+    <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
   </div>
-
-<div class="form-group">
-  	  <label for="exampleInputEmail1">Email address</label>
-  	  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 </div>
 
+<div class="form-group">
+  	<label class="control-label col-sm-2" for="email">Entrez votre email : </label>
+    <div class="col-sm-10">
+  	<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+  </div>
+</div>
+     <!--  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+ -->
+
 
 <div class="form-group">
-    <label for="exampleFormControlTextarea1">Biographie</label>
-    <textarea class="form-control" name="bio" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <label class="control-label col-sm-2" for="Textarea">Votre Biographie</label>
+    <div class="col-sm-10">
+    <textarea class="form-control" name="bio" id="Textarea" rows="3"></textarea>
+  </div>
 </div>
 
 <center>
 <button type="submit" class="btn btn-primary">Envoyer</button>
-
 </center>
+
 
 </form>
 
@@ -34,8 +44,8 @@
 
 
 <!------------------------with form_tag------------------------>
-<!-- 
-<%= form_tag url_for(action: 'create'), method: "post" do %>
+
+<!-- <%= form_tag url_for(action: 'create'), method: "post" do %>
 
       <%= label_tag 'Username' %><br />
       <%= text_field_tag 'username' %>
@@ -51,7 +61,4 @@
 
       <%= submit_tag "Create Post" %>
 
-    <% end %>
-
-
- -->
+    <% end %> -->
