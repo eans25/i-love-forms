@@ -1,0 +1,13 @@
+<form action="users/create" method="POST">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+Username:<br>
+  <input type="text" name="username">
+	<br>
+	email:<br>
+  <input type="text" name="email">
+	<br>
+ 	Bio:<br>
+  <input type="text" name="bio">
+   <br> <br>
+  <input type="submit" value="Envoyer le formulaire">
+</form>
