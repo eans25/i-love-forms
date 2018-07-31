@@ -1,24 +1,30 @@
-# README
+# THP - SEMAINE 5 - I love FORMS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+> contributeur : ENG EangLy et GOUACIDE Kwevan
 
-* Ruby version
 
-* System dependencies
+Lien Heroku : 
 
-* Configuration
+https://mooglovesforms.herokuapp.com
 
-* Database creation
 
-* Database initialization
+### Utilisation
 
-* How to run the test suite
+`bundle install`
 
-* Services (job queues, cache servers, search engines, etc.)
+`rails db:migrate`
 
-* Deployment instructions
+`rails server`
 
-* ...
+puis aller sur: 
+
+http://localhost:3000
+
+
+
+
+
+
+
+

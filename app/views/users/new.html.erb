@@ -6,19 +6,23 @@
 	
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
+<center>
+<h1> FORMULAIRE </h1>
 
-
+<hr>
+<br>
+<br>
 
 <div class="form-group">
-    <label class="control-label col-sm-2" for="username">Entrez votre pseudo:</label>
-    <div class="col-sm-10">
+    <label class="control-label col-sm-10" for="username">Entrez votre pseudo:</label>
+    <div class="col-sm-8">
     <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
   </div>
 </div>
 
 <div class="form-group">
-  	<label class="control-label col-sm-2" for="email">Entrez votre email : </label>
-    <div class="col-sm-10">
+  	<label class="control-label col-sm-10" for="email">Entrez votre email : </label>
+    <div class="col-sm-8">
   	<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
   </div>
 </div>
@@ -27,17 +31,16 @@
 
 
 <div class="form-group">
-    <label class="control-label col-sm-2" for="Textarea">Votre Biographie</label>
-    <div class="col-sm-10">
+    <label class="control-label col-sm-10" for="Textarea">Votre Biographie :</label>
+    <div class="col-sm-8">
     <textarea class="form-control" name="bio" id="Textarea" rows="3"></textarea>
   </div>
 </div>
 
-<center>
+
 <button type="submit" class="btn btn-primary">Envoyer</button>
+
 </center>
-
-
 </form>
 
 
