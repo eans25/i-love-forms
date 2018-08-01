@@ -7,9 +7,8 @@
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
 <center>
-<h1> FORMULAIRE </h1>
-
-<hr>
+<div style="background-color: #296AD2" class="p-3 text-white"><h1>FORMULAIRE</h1></div>
+<br>
 <br>
 <br>
 
@@ -26,12 +25,9 @@
   	<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
   </div>
 </div>
-     <!--  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
- -->
-
 
 <div class="form-group">
-    <label class="control-label col-sm-10" for="Textarea">Votre Biographie :</label>
+    <label class="control-label col-sm-10" for="Textarea">Entrez votre biographie :</label>
     <div class="col-sm-8">
     <textarea class="form-control" name="bio" id="Textarea" rows="3"></textarea>
   </div>
@@ -47,21 +43,51 @@
 
 
 <!------------------------with form_tag------------------------>
+<!-- 
 
-<!-- <%= form_tag url_for(action: 'create'), method: "post" do %>
 
-      <%= label_tag 'Username' %><br />
+<%= form_tag url_for(action: 'create'), method: "post" do %>
+
+      <%= label_tag 'Entrez votre pseudo:' %><br />
       <%= text_field_tag 'username' %>
       <br /> <br />
 
-      <%= label_tag 'Email' %><br />
+      <%= label_tag 'Entrez votre email :' %><br />
       <%= email_field_tag 'email'%>
       <br /> <br />
 
-      <%= label_tag 'Bio' %><br />
+      <%= label_tag 'Entrez votre biographie :' %><br />
       <%= text_area_tag 'bio' %>
       <br /> <br />
 
-      <%= submit_tag "Create Post" %>
+      <%= submit_tag "Envoyer" %>
 
-    <% end %> -->
+    <% end %>
+ -->
+
+
+ <!------------------------with form_for------------------------>
+
+<!-- 
+ <%= form_for :user do |f| %>
+pseudo: <br/>
+   <%= f.text_field :username %><br><br>
+Email :<br/>
+   <%= f.email_field :email %><br><br>
+Biography :<br/>
+   <%= f.text_area :bio %><br><br>
+
+   <%= f.submit "Envoyer" %>
+ <% end %> -->
+
+
+
+
+
+
+
+
+
+
+
+

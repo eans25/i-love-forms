@@ -1,9 +1,10 @@
 <center>
-<h1> WELCOME </h1>
+<div style="background-color: #296AD2" class="p-3 text-white"><h1> WELCOME <%= @user.username %></h1></div>
+<br>
+<br>
+<br>
+
+<p>Email rattaché au compte > <%=@user.email%> </p>
+<p>Voici votre bio > <%= @user.bio %> </p>
+
 </center>
-<hr>
-
-<h1>Bonjour <%= @user.username %></h1>
-
-<p>Email rattaché au compte: <%=@user.email%> </p>
-<p>Voici votre bio : <%= @user.bio %> </p>

@@ -1,28 +1,31 @@
-# THP - SEMAINE 5 - I love FORMS
+# THP - SEMAINE 5 - I LOVE FORMS
 
 
-> contributeur : ENG EangLy et GOUACIDE Kwevan
+> contributeur: GOUACIDE Kwevan et ENG Eang-Ly
 
 
-Lien Heroku : 
+### Lien du site:  
 
 https://mooglovesforms.herokuapp.com
 
+### Pour une utilisation en local
 
-### Utilisation
+Après avoir clone le repo et entrer dans le dossier
 
-`bundle install`
+Dans le TERMINAL
+```sh
+bundle install --without production
+```
+```sh
+rails db:migrate
+```
+```sh
+rails server
+```
 
-`rails db:migrate`
+Puis aller sur ce lien
 
-`rails server`
-
-puis aller sur: 
-
-http://localhost:3000
-
-
-
+https://localhost:3000/
 
 
 
